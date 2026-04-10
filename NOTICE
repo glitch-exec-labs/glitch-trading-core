@@ -1,0 +1,13 @@
+Glitch Trading Core
+Copyright 2026 Glitch Executor
+
+Developed and maintained by Glitch Executor.
+
+This repository contains the original Glitch Trading Core platform structure,
+including the Glitch bot family, Oracle coordination concepts, and the MT5 to
+cTrader architecture direction.
+
+"Glitch" and "Glitch Executor" are project identifiers associated with the
+original project authorship and branding. The Apache License, Version 2.0,
+grants rights to use, modify, and redistribute the code, but does not grant
+trademark rights except as allowed under Section 6 of the License.

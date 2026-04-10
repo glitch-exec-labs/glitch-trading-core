@@ -120,6 +120,22 @@ Read the cTrader direction in [ctrader/README.md](./ctrader/README.md).
 - [Roadmap](./docs/roadmap.md)
 - [cTrader Track](./ctrader/README.md)
 
+## License And Attribution
+
+This project is released under the [Apache License 2.0](./LICENSE).
+
+That means other builders can use, modify, and distribute the code, while the
+project still keeps a clear authorship trail through:
+
+- [NOTICE](./NOTICE)
+- [AUTHORS.md](./AUTHORS.md)
+
+## Branding Note
+
+`Glitch` and `Glitch Executor` are part of the original project identity and
+branding. The code is open under Apache 2.0, but the license does not grant
+trademark rights beyond normal attribution and origin references.
+
 ## Safety Notes
 
 - only sanitized example configs are included
