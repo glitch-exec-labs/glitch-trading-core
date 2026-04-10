@@ -61,10 +61,21 @@ flowchart LR
 | `mamba.py` | Bollinger mean reversion | M15 | range trading | controlled fade setups |
 | `anaconda.py` | breakout confirmation | H4 | swing confirmation | slower high-structure entries |
 | `hydra.py` | regime routing | M1 | adaptive execution | trend/range switching logic |
-| `king_cobra_auto.py` | momentum scalping + ML/news gating | M5 | fast filtered execution | momentum scalps with higher-timeframe, ML, and news filters |
+| `king_cobra_auto.py` | single-bot momentum framework | multi-timeframe | unified execution engine | one bot whose strategy is segmented by timeframe, asset profile, ML, and news filters |
 | `oracle.py` | coordination engine | multi-bot | consensus and conflict control | portfolio-level decision shaping |
 
 More detail lives in [docs/strategy-matrix.md](./docs/strategy-matrix.md).
+
+### Indian King Cobra Positioning
+
+Indian King Cobra should be understood as a single bot, not a sub-family of separate bots.
+
+Its core strategy is divided internally by:
+
+- timeframe roles, with lower-timeframe execution and higher-timeframe confirmation
+- per-asset configuration blocks
+- optional ML gating for selected symbols
+- news-aware trade filtering
 
 ## Repository Map
 

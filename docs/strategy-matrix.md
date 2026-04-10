@@ -10,7 +10,7 @@ This document summarizes the role of each Glitch bot in the broader ensemble.
 | Mamba | M15 | mean reversion | fades stretched moves in range conditions | balance against trend-heavy modules |
 | Anaconda | H4 | breakout validation | focuses on slower, stronger structural continuation | swing confirmation layer |
 | Hydra | M1 | regime routing | adapts between trend and range playbooks | tactical short-horizon adapter |
-| Indian King Cobra | M5 | momentum scalping + ML/news filter | combines fast momentum triggers with H1 confirmation, optional ML, and a news veto | filtered scalping layer |
+| Indian King Cobra | Multi-timeframe | single-bot momentum framework | one unified bot that segments execution by timeframe role and per-asset profiles, with optional ML and news gating | filtered scalping layer |
 | Oracle | Multi-bot | coordination | manages overlap, conflict, and aggregate exposure | portfolio governor |
 
 ## Strategic Coverage
@@ -35,6 +35,17 @@ With the Oracle, the system can:
 - prefer aligned signals
 - soften conflict between mean-reversion and trend modules
 - enforce portfolio-level discipline
+
+## Indian King Cobra Structure
+
+Indian King Cobra is intentionally modeled as one bot.
+
+Its strategy segmentation happens inside the bot rather than by splitting into multiple separate executables. The main divisions are:
+
+- execution timeframe versus confirmation timeframe
+- asset-specific parameter blocks
+- ML-required, ML-soft, or ML-disabled symbol modes
+- session and news filtering by asset context
 
 ## Prop-Firm Relevance
 

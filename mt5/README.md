@@ -19,6 +19,8 @@ Current bot family in this track:
 - `king_cobra_auto.py`
 - `oracle.py`
 
+`king_cobra_auto.py` is a single bot with internal strategy segmentation across timeframe roles and per-asset configuration, not a separate cluster of child bots.
+
 ## Intent
 
 The MT5 track is the current reference implementation.

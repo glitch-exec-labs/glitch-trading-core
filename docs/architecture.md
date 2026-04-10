@@ -28,7 +28,7 @@ Each bot is intentionally specialized:
 - `Mamba`: mean reversion in calmer regimes
 - `Anaconda`: slower breakout validation
 - `Hydra`: regime-aware tactical switching
-- `Indian King Cobra`: momentum scalping with ML and news-aware gating
+- `Indian King Cobra`: a single unified bot whose momentum framework is segmented internally by timeframe role, asset profile, ML mode, and news-aware gating
 
 ### 2. Shared infrastructure
 
