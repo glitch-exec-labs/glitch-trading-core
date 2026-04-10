@@ -10,6 +10,7 @@ This document summarizes the role of each Glitch bot in the broader ensemble.
 | Mamba | M15 | mean reversion | fades stretched moves in range conditions | balance against trend-heavy modules |
 | Anaconda | H4 | breakout validation | focuses on slower, stronger structural continuation | swing confirmation layer |
 | Hydra | M1 | regime routing | adapts between trend and range playbooks | tactical short-horizon adapter |
+| Indian King Cobra | M5 | momentum scalping + ML/news filter | combines fast momentum triggers with H1 confirmation, optional ML, and a news veto | filtered scalping layer |
 | Oracle | Multi-bot | coordination | manages overlap, conflict, and aggregate exposure | portfolio governor |
 
 ## Strategic Coverage
@@ -20,6 +21,7 @@ The Glitch stack is intentionally diversified across trading styles:
 - breakout
 - mean reversion
 - structure-based price action
+- filtered momentum scalping
 - regime-aware adaptation
 - portfolio-level orchestration
 
