@@ -8,6 +8,8 @@ Core Glitch trading bots, oracle coordination, and shared risk infrastructure fo
 ![Language](https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Architecture](https://img.shields.io/badge/architecture-Ensemble%20%2B%20Oracle-059669?style=for-the-badge)
 ![Risk](https://img.shields.io/badge/risk-Prop%20Firm%20Aware-D97706?style=for-the-badge)
+![Family](https://img.shields.io/badge/family-Glitch%20Ecosystem-7c3aed?style=for-the-badge)
+![Flagship](https://img.shields.io/badge/flagship-Ouroboros-0f766e?style=for-the-badge)
 
 </div>
 
