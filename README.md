@@ -66,12 +66,15 @@ That matters because the long-term design goal is not broker lock-in. It is port
 
 ## Why This Repo Exists
 
-This repository is designed to do two jobs well:
+Glitch Trading Core is meant to be used by builders.
 
-- preserve the current MT5 implementation of the Glitch bot family
-- define a clean migration path toward a cTrader-native Linux deployment
+Developers can study the architecture, reuse the strategy patterns, and build their own broker-portable systems on top of this foundation. If the project helps your work, support the ecosystem by starring the repo and contributing improvements back.
 
-The strategy concepts stay the same across both platforms:
+The public code shows the execution design, coordination model, and platform structure. The deeper edge comes from the accumulated ML data, labeled outcomes, and live research workflows behind the Glitch Executor ecosystem. If you want to collaborate around data, model training, or platform integration, contact the maintainers.
+
+Glitch Executor is being built as a practical platform for retail traders who want stronger strategy infrastructure, better execution discipline, and research-driven automation.
+
+The strategy concepts stay consistent across implementations:
 
 - multi-bot specialization instead of one monolithic strategy
 - portfolio-aware risk and conflict management
