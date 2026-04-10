@@ -4,29 +4,46 @@
 
 Core Glitch trading bots, oracle coordination, and shared risk infrastructure for a multi-strategy trading stack.
 
+![Product](https://img.shields.io/badge/product-Umbrella%20Core-0f766e?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-MT5%20today%20%7C%20cTrader%20next-111827?style=for-the-badge)
 ![Language](https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Architecture](https://img.shields.io/badge/architecture-Ensemble%20%2B%20Oracle-059669?style=for-the-badge)
 ![Risk](https://img.shields.io/badge/risk-Prop%20Firm%20Aware-D97706?style=for-the-badge)
 ![Family](https://img.shields.io/badge/family-Glitch%20Ecosystem-7c3aed?style=for-the-badge)
-![Flagship](https://img.shields.io/badge/flagship-Ouroboros-0f766e?style=for-the-badge)
+
+[![Hub](https://img.shields.io/badge/Hub-Glitch%20Trading%20Core-111827?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-trading-core)
+[![Flagship](https://img.shields.io/badge/Flagship-Ouroboros%20Snake%20Strategy-0f766e?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-ouroboros-snake-strategy)
+[![Satellite](https://img.shields.io/badge/Satellite-Indian%20King%20Cobra-1d4ed8?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-indian-king-cobra)
+[![Satellite](https://img.shields.io/badge/Satellite-Terciopelo-7c3aed?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-terciopelo)
 
 </div>
 
 > Glitch Trading Core is the reference strategy repository for the Glitch stack: multiple specialized bots, shared feature engineering, centralized risk controls, and an Oracle layer that coordinates decisions across the ensemble.
 
+## Repo Role
+
+Glitch Trading Core is the ecosystem hub.
+
+It provides:
+
+- the umbrella engineering repo for the Glitch family
+- shared architecture, documentation, and platform direction
+- the bridge between the current MT5 estate and the next cTrader deployment
+
 ## Naming Hierarchy
 
-The Glitch ecosystem should be understood in three layers:
+The Glitch ecosystem is organized in three layers:
 
 - **Glitch Trading Core**: the umbrella engineering and architecture repository
-- **Ouroboros Snake Strategy**: the flagship multi-bot ensemble strategy
+- [**Ouroboros Snake Strategy**](https://github.com/glitch-executor/glitch-ouroboros-snake-strategy): the flagship multi-bot ensemble strategy
 - **Satellite strategy repos**: standalone strategy products such as Indian King Cobra and Terciopelo
 
-## Related Repos
+## Ecosystem Links
 
-[![Indian King Cobra](https://img.shields.io/badge/Repo-Indian%20King%20Cobra-0f766e?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-indian-king-cobra)
-[![Terciopelo](https://img.shields.io/badge/Repo-Terciopelo-1d4ed8?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-terciopelo)
+- [Glitch Trading Core](https://github.com/glitch-executor/glitch-trading-core) is the umbrella repo
+- [Ouroboros Snake Strategy](https://github.com/glitch-executor/glitch-ouroboros-snake-strategy) is the flagship Oracle-plus-six-snake ensemble
+- [Indian King Cobra](https://github.com/glitch-executor/glitch-indian-king-cobra) is the standalone unified momentum scalper
+- [Terciopelo](https://github.com/glitch-executor/glitch-terciopelo) is the standalone equities relative-value strategy
 
 ### Ouroboros Snake Strategy
 
