@@ -36,7 +36,7 @@ With the Oracle, the system can:
 
 ## Satellite Strategies
 
-Indian King Cobra and Terciopelo sit beside the core Ouroboros stack as standalone products.
+Satellite strategies sit beside the core Ouroboros stack as standalone products.
 
 They are part of the broader Glitch ecosystem, but not part of the in-repo six-snake ensemble described here.
 

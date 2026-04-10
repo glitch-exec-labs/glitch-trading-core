@@ -21,6 +21,11 @@ The Glitch ecosystem should be understood in three layers:
 - **Ouroboros Snake Strategy**: the flagship multi-bot ensemble strategy
 - **Satellite strategy repos**: standalone strategy products such as Indian King Cobra and Terciopelo
 
+## Related Repos
+
+[![Indian King Cobra](https://img.shields.io/badge/Repo-Indian%20King%20Cobra-0f766e?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-indian-king-cobra)
+[![Terciopelo](https://img.shields.io/badge/Repo-Terciopelo-1d4ed8?style=for-the-badge&logo=github)](https://github.com/glitch-executor/glitch-terciopelo)
+
 ### Ouroboros Snake Strategy
 
 Ouroboros Snake Strategy is the flagship coordinated ensemble inside the Glitch system.

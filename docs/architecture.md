@@ -10,7 +10,7 @@ Within the broader Glitch ecosystem, the flagship ensemble should be presented a
 
 - **Glitch Trading Core** is the umbrella codebase and architecture layer
 - **Ouroboros Snake Strategy** is the Oracle plus six-snake flagship ensemble
-- standalone systems like **Indian King Cobra** and **Terciopelo** sit beside that flagship as separate products
+- standalone systems sit beside that flagship as separate products
 
 ## Core Layers
 
@@ -36,7 +36,6 @@ Each bot is intentionally specialized:
 - `Mamba`: mean reversion in calmer regimes
 - `Anaconda`: slower breakout validation
 - `Hydra`: regime-aware tactical switching
-- `Indian King Cobra`: a single unified bot whose momentum framework is segmented internally by timeframe role, asset profile, ML mode, and news-aware gating
 
 ### 2. Shared infrastructure
 

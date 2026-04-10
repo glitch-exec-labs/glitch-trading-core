@@ -40,14 +40,11 @@ The Ouroboros brand works well because the strategy is cyclical, self-reinforcin
 - Anaconda for slower breakout confirmation
 - Hydra for regime-aware adaptation
 
-## What Is Not Ouroboros
+## Boundary
 
-The following should be treated as adjacent strategy products, not as the core Ouroboros stack:
+Ouroboros is the Oracle plus six-snake flagship ensemble.
 
-- Indian King Cobra
-- Terciopelo
-
-They can be part of the broader Glitch ecosystem, but they should keep their own product identities and repositories.
+Adjacent strategy products may live elsewhere in the broader Glitch ecosystem, but they should not be confused with the core Ouroboros stack.
 
 ## Recommended One-Line Description
 

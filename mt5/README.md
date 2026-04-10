@@ -18,7 +18,7 @@ Current bot family in this track:
 - `hydra.py`
 - `oracle.py`
 
-Standalone satellite products such as Indian King Cobra and Terciopelo now live in their own repositories rather than being treated as part of this core MT5 codebase.
+Standalone satellite products now live in their own repositories rather than being treated as part of this core MT5 codebase.
 
 ## Intent
 

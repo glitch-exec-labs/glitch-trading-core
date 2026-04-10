@@ -17,6 +17,11 @@ Suggested description:
 
 Core Glitch trading architecture, Oracle coordination, and shared strategy modules for MT5 today and cTrader next.
 
+Important boundary:
+
+- this repo should link to satellite products
+- it should not house their strategy code long term
+
 ## Flagship Strategy Brand
 
 ### Ouroboros Snake Strategy
