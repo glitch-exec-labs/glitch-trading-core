@@ -184,6 +184,7 @@ Read the cTrader direction in [ctrader/README.md](./ctrader/README.md).
 - [Ouroboros Snake Strategy](./docs/ouroboros-snake-strategy.md)
 - [Platform Map](./docs/platform-map.md)
 - [Repo Ecosystem](./docs/repo-ecosystem.md)
+- [Social Preview Brief](./docs/social-preview.md)
 - [Strategy Matrix](./docs/strategy-matrix.md)
 - [Roadmap](./docs/roadmap.md)
 - [cTrader Track](./ctrader/README.md)
