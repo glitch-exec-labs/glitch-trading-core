@@ -1,0 +1,193 @@
+{
+  "propfirm": {
+    "account_number": "REDACTED",
+    "server": "REDACTED",
+    "mt5_path": "REDACTED",
+    "global_daily_loss_limit": -50000.0,
+    "timeframe_primary": "M1",
+    "timeframe_confirm": "M5",
+    "server_port": "REDACTED",
+    "strategy_interval": 10,
+    "entry_cooldown_seconds": 60,
+    "news_blackout_enabled": false,
+    "trailing_interval": 5,
+    "symbols": {
+      "XAUUSD": {
+        "enabled": true,
+        "priority": 1,
+        "ema_period": 21,
+        "ema_fast": 9,
+        "ema_slow": 21,
+        "rsi_period": 14,
+        "atr_period": 14,
+        "adx_period": 14,
+        "min_adx_trending": 20,
+        "max_adx_ranging": 20,
+        "sr_lookback": 50,
+        "sr_tolerance_atr": 0.6,
+        "pin_wick_atr_mult": 0.8,
+        "pin_body_ratio": 2.0,
+        "engulf_min_atr_mult": 0.5,
+        "breakout_lookback": 10,
+        "breakout_buffer_mult": 0.2,
+        "breakout_conditions_required": 3,
+        "pullback_atr_mult": 0.8,
+        "pullback_rsi_buy_min": 35,
+        "pullback_rsi_sell_max": 65,
+        "bb_period": 20,
+        "bb_std": 2.0,
+        "bb_rsi_oversold": 25,
+        "bb_rsi_overbought": 75,
+        "atr_sl_multiplier": 1.2,
+        "atr_trail_multiplier": 0.8,
+        "breakeven_atr_mult": 0.8,
+        "trail_phase1_atr": 1.2,
+        "trail_phase1_distance": 0.8,
+        "trail_phase2_atr": 2.0,
+        "trail_phase2_distance": 0.5,
+        "rsi_exit_high": 78,
+        "rsi_exit_low": 22,
+        "min_reward_risk_trend": 1.5,
+        "min_reward_risk_range": 1.5,
+        "max_spread_atr_mult": 0.4,
+        "min_stop_points": 500,
+        "fixed_tp_points": 2000,
+        "fixed_trail_points": 500,
+        "fixed_breakeven_points": 300,
+        "risk_percent": 0.5,
+        "min_lot": 0.01,
+        "max_lot": 0.3,
+        "max_positions": 1,
+        "use_trailing": true,
+        "time_filter": {
+          "enabled": true,
+          "sessions": [
+            {
+              "start_hour": 7,
+              "end_hour": 21
+            }
+          ],
+          "friday_cutoff_hour": 19,
+          "friday_flatten_hour": 20
+        },
+        "max_symbol_daily_loss_pct": 3,
+        "max_symbol_consecutive_losses": 4,
+        "loss_cooldown_multiplier": 2.0,
+        "max_loss_cooldown": 3600
+      },
+      "EURUSD": {
+        "enabled": true,
+        "priority": 2,
+        "ema_period": 21,
+        "ema_fast": 9,
+        "ema_slow": 21,
+        "rsi_period": 14,
+        "atr_period": 14,
+        "adx_period": 14,
+        "min_adx_trending": 20,
+        "max_adx_ranging": 20,
+        "sr_lookback": 50,
+        "sr_tolerance_atr": 0.5,
+        "pin_wick_atr_mult": 0.8,
+        "pin_body_ratio": 2.0,
+        "engulf_min_atr_mult": 0.5,
+        "breakout_lookback": 10,
+        "breakout_buffer_mult": 0.2,
+        "breakout_conditions_required": 3,
+        "pullback_atr_mult": 0.8,
+        "pullback_rsi_buy_min": 35,
+        "pullback_rsi_sell_max": 65,
+        "bb_period": 20,
+        "bb_std": 2.0,
+        "bb_rsi_oversold": 25,
+        "bb_rsi_overbought": 75,
+        "atr_sl_multiplier": 1.0,
+        "atr_trail_multiplier": 0.7,
+        "breakeven_atr_mult": 0.6,
+        "trail_phase1_atr": 1.0,
+        "trail_phase1_distance": 0.7,
+        "trail_phase2_atr": 1.8,
+        "trail_phase2_distance": 0.4,
+        "rsi_exit_high": 78,
+        "rsi_exit_low": 22,
+        "min_reward_risk_trend": 1.5,
+        "min_reward_risk_range": 1.5,
+        "max_spread_atr_mult": 0.4,
+        "min_stop_points": 50,
+        "fixed_tp_points": 80,
+        "fixed_trail_points": 30,
+        "fixed_breakeven_points": 20,
+        "risk_percent": 0.5,
+        "min_lot": 0.01,
+        "max_lot": 1.0,
+        "max_positions": 1,
+        "use_trailing": true,
+        "time_filter": {
+          "enabled": true,
+          "sessions": [
+            {
+              "start_hour": 7,
+              "end_hour": 21
+            }
+          ],
+          "friday_cutoff_hour": 19,
+          "friday_flatten_hour": 20
+        },
+        "max_symbol_daily_loss_pct": 3,
+        "max_symbol_consecutive_losses": 4,
+        "loss_cooldown_multiplier": 2.0,
+        "max_loss_cooldown": 3600
+      },
+      "BTCUSD": {
+        "enabled": false,
+        "priority": 3
+      }
+    },
+    "prop_firm": {
+      "enabled": true,
+      "initial_capital": 100000,
+      "profit_target_pct": 6.0,
+      "max_daily_loss_pct": 50.0,
+      "max_trailing_loss_pct": 100.0,
+      "daily_loss_halt_pct": 50.0,
+      "daily_loss_warning_pct": 40.0,
+      "daily_profit_bank_pct": 4.0,
+      "daily_profit_conservative_pct": 3.0,
+      "trailing_dd_warning_pct": 80.0,
+      "trailing_dd_critical_pct": 90.0,
+      "trailing_dd_halt_pct": 100.0,
+      "friday_flatten_hour": 19,
+      "max_total_positions": 5,
+      "max_positions_per_symbol": 1,
+      "loss_cooloff_seconds": 120,
+      "max_losses_per_symbol_per_day": 4
+    },
+    "oracle_guard": {
+      "enabled": true,
+      "url": "http://127.0.0.1:8070",
+      "api_key": "REDACTED",
+      "timeout": 3.0,
+      "fail_open": true
+    },
+    "m5_trend_gate": {
+      "enabled": false,
+      "ema_fast": 20,
+      "ema_slow": 50
+    },
+    "viper_gate": {
+      "enabled": false,
+      "fail_open": true,
+      "timeout": 2.0,
+      "symbols": {
+        "XAUUSD": {
+          "url": "http://127.0.0.1:8059",
+          "api_key": "REDACTED"
+        },
+        "EURUSD": {
+          "url": "http://127.0.0.1:8050",
+          "api_key": "REDACTED"
+        }
+      }
+    }
+  }
+}

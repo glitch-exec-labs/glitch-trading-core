@@ -1,0 +1,93 @@
+{
+  "server_port": "REDACTED",
+  "poll_interval": 15,
+  "log_file": "oracle.log",
+  "bots": {
+    "anaconda": {
+      "url": "http://127.0.0.1:8051",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 150000,
+      "timeframe": "H4"
+    },
+    "cobra": {
+      "url": "http://127.0.0.1:8050",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 150000,
+      "timeframe": "H1"
+    },
+    "viper": {
+      "url": "http://127.0.0.1:8059",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 150000,
+      "timeframe": "M5"
+    },
+    "mamba": {
+      "url": "http://127.0.0.1:8056",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 150000,
+      "timeframe": "M15"
+    },
+    "taipan": {
+      "url": "http://127.0.0.1:8055",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 150000,
+      "timeframe": "M30"
+    },
+    "hydra": {
+      "url": "http://127.0.0.1:8091",
+      "api_key": "REDACTED",
+      "account": "REDACTED",
+      "starting_equity": 100000,
+      "timeframe": "M1"
+    }
+  },
+  "conflict_scope": "tiered",
+  "conflict_tiers": [
+    [
+      "viper",
+      "hydra"
+    ]
+  ],
+  "risk_thresholds": {
+    "max_total_positions": 15,
+    "max_total_lots": 0.0,
+    "max_total_lots_per_100k": 0.0,
+    "max_currency_concentration": 5,
+    "max_positions_per_symbol": 3
+  },
+  "currency_map": {
+    "EURUSD": [
+      "EUR",
+      "USD"
+    ],
+    "USDJPY": [
+      "USD",
+      "JPY"
+    ],
+    "XAUUSD": [
+      "XAU",
+      "USD"
+    ],
+    "BTCUSD": [
+      "BTC",
+      "USD"
+    ],
+    "WTIcash-1": [
+      "WTI",
+      "USD"
+    ],
+    "ETHUSD": [
+      "ETH",
+      "USD"
+    ],
+    "SOLUSD": [
+      "SOL",
+      "USD"
+    ]
+  }
+}

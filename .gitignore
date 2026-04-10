@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and machine state
+.env
+.env.*
+*.key
+*.pem
+*.log
+*.state.json
+*_state.json
+*_positions.json
+
+# Training and model artifacts
+ml_data/
+ml_models/
+*.pkl
+*.joblib
+*.onnx
+*.h5
+*.pt
+*.pth
+*.xgb
+*.bin
+*.model
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
