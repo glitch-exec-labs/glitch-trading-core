@@ -45,6 +45,10 @@ Suggested description:
 
 Indian King Cobra is a unified momentum scalping bot with timeframe-aware execution, asset-specific tuning, ML gating, and news filters.
 
+Repo:
+
+- [glitch-indian-king-cobra](https://github.com/glitch-executor/glitch-indian-king-cobra)
+
 ### Terciopelo
 
 Role:
@@ -56,6 +60,10 @@ Role:
 Suggested description:
 
 Terciopelo is a Mag7-focused relative-value and mean-reversion trading system with technical scoring and LLM-assisted news filtering.
+
+Repo:
+
+- [glitch-terciopelo](https://github.com/glitch-executor/glitch-terciopelo)
 
 Implementation note:
 
@@ -85,3 +93,4 @@ Evidence already exists in the current code history:
 - use **Glitch Trading Core** for the umbrella repository
 - use **Ouroboros Snake Strategy** for the flagship ensemble brand
 - use **Indian King Cobra** and **Terciopelo** as standalone repo names and product identities
+- link satellite repos from the umbrella repo instead of presenting them as in-repo core components

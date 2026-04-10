@@ -71,14 +71,12 @@ flowchart LR
     B --> B4["Mamba"]
     B --> B5["Anaconda"]
     B --> B6["Hydra"]
-    B --> B7["Indian King Cobra"]
     B1 --> C["Oracle Layer"]
     B2 --> C
     B3 --> C
     B4 --> C
     B5 --> C
     B6 --> C
-    B7 --> C
     C --> D["Risk Guards"]
     D --> E["Execution Adapter"]
     E --> F["MT5 Today / cTrader Next"]
@@ -94,21 +92,18 @@ flowchart LR
 | `mamba.py` | Bollinger mean reversion | M15 | range trading | controlled fade setups |
 | `anaconda.py` | breakout confirmation | H4 | swing confirmation | slower high-structure entries |
 | `hydra.py` | regime routing | M1 | adaptive execution | trend/range switching logic |
-| `king_cobra_auto.py` | single-bot momentum framework | multi-timeframe | unified execution engine | one bot whose strategy is segmented by timeframe, asset profile, ML, and news filters |
 | `oracle.py` | coordination engine | multi-bot | consensus and conflict control | portfolio-level decision shaping |
 
 More detail lives in [docs/strategy-matrix.md](./docs/strategy-matrix.md).
 
-### Indian King Cobra Positioning
+## Satellite Strategy Repos
 
-Indian King Cobra should be understood as a single bot, not a sub-family of separate bots.
+These now live as standalone public repos rather than as part of the core codebase:
 
-Its core strategy is divided internally by:
+- [glitch-indian-king-cobra](https://github.com/glitch-executor/glitch-indian-king-cobra)
+- [glitch-terciopelo](https://github.com/glitch-executor/glitch-terciopelo)
 
-- timeframe roles, with lower-timeframe execution and higher-timeframe confirmation
-- per-asset configuration blocks
-- optional ML gating for selected symbols
-- news-aware trade filtering
+Glitch Trading Core should describe and link these products, but not present them as part of the in-repo Ouroboros execution stack.
 
 ## Repository Map
 
@@ -162,7 +157,6 @@ Read the cTrader direction in [ctrader/README.md](./ctrader/README.md).
 ## Documentation
 
 - [Architecture](./docs/architecture.md)
-- [Indian King Cobra](./docs/indian-king-cobra.md)
 - [Ouroboros Snake Strategy](./docs/ouroboros-snake-strategy.md)
 - [Platform Map](./docs/platform-map.md)
 - [Repo Ecosystem](./docs/repo-ecosystem.md)

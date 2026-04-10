@@ -16,10 +16,9 @@ Current bot family in this track:
 - `mamba.py`
 - `anaconda.py`
 - `hydra.py`
-- `king_cobra_auto.py`
 - `oracle.py`
 
-`king_cobra_auto.py` is a single bot with internal strategy segmentation across timeframe roles and per-asset configuration, not a separate cluster of child bots.
+Standalone satellite products such as Indian King Cobra and Terciopelo now live in their own repositories rather than being treated as part of this core MT5 codebase.
 
 ## Intent
 
