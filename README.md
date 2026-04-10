@@ -13,6 +13,39 @@ Core Glitch trading bots, oracle coordination, and shared risk infrastructure fo
 
 > Glitch Trading Core is the reference strategy repository for the Glitch stack: multiple specialized bots, shared feature engineering, centralized risk controls, and an Oracle layer that coordinates decisions across the ensemble.
 
+## Naming Hierarchy
+
+The Glitch ecosystem should be understood in three layers:
+
+- **Glitch Trading Core**: the umbrella engineering and architecture repository
+- **Ouroboros Snake Strategy**: the flagship multi-bot ensemble strategy
+- **Satellite strategy repos**: standalone strategy products such as Indian King Cobra and Terciopelo
+
+### Ouroboros Snake Strategy
+
+Ouroboros Snake Strategy is the flagship coordinated ensemble inside the Glitch system.
+
+It combines:
+
+- the Oracle coordination layer
+- the six-snake execution stack of Viper, Cobra, Taipan, Mamba, Anaconda, and Hydra
+- shared risk controls, feature engineering, and broker-adapter design
+
+Indian King Cobra and Terciopelo should be positioned as separate strategy products rather than folded permanently into the Ouroboros ensemble identity.
+
+## Broker And Platform Reach
+
+The Glitch ecosystem is intentionally bigger than one broker or one execution venue.
+
+Across the broader strategy family, the codebase history already spans:
+
+- MT5-based execution
+- Interactive Brokers-based execution
+- Kraken API-based execution
+- cTrader as the next platform target
+
+That matters because the long-term design goal is not broker lock-in. It is portable strategy logic with swappable execution adapters.
+
 ## Why This Repo Exists
 
 This repository is designed to do two jobs well:
@@ -129,7 +162,10 @@ Read the cTrader direction in [ctrader/README.md](./ctrader/README.md).
 ## Documentation
 
 - [Architecture](./docs/architecture.md)
+- [Indian King Cobra](./docs/indian-king-cobra.md)
+- [Ouroboros Snake Strategy](./docs/ouroboros-snake-strategy.md)
 - [Platform Map](./docs/platform-map.md)
+- [Repo Ecosystem](./docs/repo-ecosystem.md)
 - [Strategy Matrix](./docs/strategy-matrix.md)
 - [Roadmap](./docs/roadmap.md)
 - [cTrader Track](./ctrader/README.md)

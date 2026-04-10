@@ -4,6 +4,14 @@ Glitch Trading Core is organized around a simple idea:
 
 specialized bots generate opportunities, shared infrastructure standardizes data and risk, and the Oracle layer coordinates the final portfolio behavior.
 
+## Strategic Identity
+
+Within the broader Glitch ecosystem, the flagship ensemble should be presented as **Ouroboros Snake Strategy**:
+
+- **Glitch Trading Core** is the umbrella codebase and architecture layer
+- **Ouroboros Snake Strategy** is the Oracle plus six-snake flagship ensemble
+- standalone systems like **Indian King Cobra** and **Terciopelo** sit beside that flagship as separate products
+
 ## Core Layers
 
 ```mermaid

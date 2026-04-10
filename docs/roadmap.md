@@ -29,6 +29,8 @@
 
 ## Near-Term Priorities
 
+- formalize the Ouroboros ensemble brand and satellite repo structure
+- separate Indian King Cobra and Terciopelo into standalone repos with shared Glitch lineage
 - richer cTrader scaffolding
 - strategy-to-adapter separation
 - shared config conventions across platforms

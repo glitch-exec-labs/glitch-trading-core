@@ -10,6 +10,14 @@
 
 This is the practical baseline for current strategy behavior.
 
+## Other Proven Execution Paths
+
+The broader Glitch ecosystem has already explored more than one broker path:
+
+- MT5 for the current snake stack
+- Interactive Brokers in the Terciopelo lineage
+- Kraken API in the crypto strategy lineage
+
 ## cTrader Next
 
 `ctrader/` defines the target shape for the next deployment environment.
