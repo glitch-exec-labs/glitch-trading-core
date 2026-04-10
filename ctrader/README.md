@@ -1,36 +1,66 @@
 # cTrader Track
 
-This folder documents the cTrader migration target for Glitch Trading Core.
+This folder represents the next-generation platform direction for Glitch Trading Core.
 
-## Goal
+## Vision
 
-Keep the trading concepts the same while replacing the MT5-specific runtime with a cTrader-native execution layer.
+Keep the trading concepts intact while replacing the MT5-specific execution layer with a cTrader-native architecture suitable for Linux deployment on GCP.
 
 ## Preserve
 
-- Strategy intent per bot
+- strategy intent per bot
 - Oracle conflict handling
-- Prop-firm risk controls
-- Shared feature engineering and labeling concepts
-- Session filters and regime routing
+- prop-firm risk controls
+- shared feature engineering and labeling concepts
+- session filters and regime routing
 
 ## Replace
 
 - MT5 terminal connectivity
-- MT5 account/session bootstrapping
-- MT5 order placement and position tracking
-- MT5 symbol metadata and point-value handling
+- MT5 account bootstrapping
+- MT5 order lifecycle handling
+- MT5 symbol metadata and point-value assumptions
 
-## Expected cTrader Architecture
+## Target Design
 
-- Signal layer: strategy logic translated from MT5 Python rules
-- Risk layer: prop-firm guard, portfolio guard, symbol exposure limits
-- Execution layer: cTrader API adapter and order lifecycle manager
-- Data layer: candle ingestion, spread/session metadata, feature snapshots
-- Coordination layer: Oracle-style consensus and conflict resolution
+```mermaid
+flowchart LR
+    A["Strategy Rules"] --> B["Normalized Signal Model"]
+    B --> C["Oracle + Risk Layer"]
+    C --> D["cTrader Execution Adapter"]
+    D --> E["cTrader Runtime on Linux"]
+```
 
-## Migration Notes
+## Migration Priorities
 
-- Start with `Taipan`, `Anaconda`, and `Hydra` concepts for the first cTrader prop stack
-- Keep feature schemas compatible where possible so MT5 historical data can still inform model training
-- Separate platform-specific code from strategy code early to reduce rewrite cost
+### 1. Pull strategy logic away from platform glue
+
+Signal rules should become easier to reuse if we separate:
+
+- indicator calculations
+- signal generation
+- risk constraints
+- broker order placement
+
+### 2. Port the best prop-oriented concepts first
+
+Recommended first-wave concepts:
+
+- Taipan session breakout
+- Anaconda higher-timeframe breakout confirmation
+- Hydra regime and risk routing
+
+### 3. Keep schemas stable
+
+Where possible, shared training fields and signal payloads should remain consistent so research can span both platforms.
+
+## Outcome
+
+The cTrader track is not a rewrite for the sake of rewriting.
+
+It is the path to:
+
+- Linux deployment
+- cleaner architecture
+- lower platform coupling
+- easier prop-firm-oriented execution

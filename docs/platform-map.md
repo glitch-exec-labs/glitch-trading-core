@@ -2,29 +2,44 @@
 
 ## MT5 Today
 
-`mt5/` contains the current Python execution stack:
+`mt5/` contains the live reference implementation:
 
-- Bot entrypoints in `mt5/bots/`
-- Shared infrastructure in `mt5/shared/`
-- Sanitized example configs in `mt5/configs/`
+- bot entrypoints in `mt5/bots/`
+- shared infrastructure in `mt5/shared/`
+- sanitized example configs in `mt5/configs/`
+
+This is the practical baseline for current strategy behavior.
 
 ## cTrader Next
 
-`ctrader/` is the design space for the Linux deployment target.
+`ctrader/` defines the target shape for the next deployment environment.
 
-The recommended separation is:
+The cTrader track should emphasize:
 
 - strategy rules
+- normalized signal payloads
 - feature extraction
 - portfolio and prop-firm controls
-- broker adapter
+- broker adapter isolation
 - observability and state persistence
 
-## Design Principle
+## Platform Split Principle
 
 The strategy concept should remain platform-agnostic wherever possible:
 
-- indicators and signal definitions should not depend on MT5 APIs
+- indicators and signal definitions should not depend directly on MT5 APIs
 - broker objects should be isolated behind an execution adapter
-- oracle logic should consume normalized intents rather than MT5-specific payloads
-- training schemas should remain stable across platform migrations
+- Oracle logic should consume normalized intents rather than MT5-specific payloads
+- training schemas should stay stable across migrations
+
+## Recommended Boundary
+
+```text
+Strategy logic      -> portable
+Risk logic          -> portable
+Feature engineering -> portable
+Oracle logic        -> portable
+Broker adapter      -> platform-specific
+Order lifecycle     -> platform-specific
+Session bootstrap   -> platform-specific
+```
