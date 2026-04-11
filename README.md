@@ -5,14 +5,27 @@
 Core Glitch trading bots, oracle coordination, and shared risk infrastructure for a multi-strategy trading stack.
 
 ![Product](https://img.shields.io/badge/product-Umbrella%20Core-0f766e?style=for-the-badge)
+![Family](https://img.shields.io/badge/family-glitch%20trading-111827?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-MT5%20today%20%7C%20cTrader%20next-111827?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/architecture-Ensemble%20%2B%20Oracle-059669?style=for-the-badge)
+![Scope](https://img.shields.io/badge/scope-architecture%20%7C%20oracle%20%7C%20risk-059669?style=for-the-badge)
 
 [Ouroboros Snake Strategy](https://github.com/glitch-executor/glitch-ouroboros-snake-strategy) · [Indian King Cobra](https://github.com/glitch-executor/glitch-indian-king-cobra) · [Terciopelo](https://github.com/glitch-executor/glitch-terciopelo)
 
 </div>
 
-> Glitch Trading Core is the reference strategy repository for the Glitch stack: multiple specialized bots, shared feature engineering, centralized risk controls, and an Oracle layer that coordinates decisions across the ensemble.
+> Glitch Trading Core is the umbrella architecture repo for the Glitch trading family: shared modules, Oracle coordination patterns, centralized risk design, and the bridge from today's MT5 estate to the next cTrader stack.
+
+## Glitch Trading Family
+
+```mermaid
+flowchart LR
+    A[Glitch Trading Core] --> B[Ouroboros Snake Strategy]
+    A --> C[Indian King Cobra]
+    A --> D[Terciopelo]
+    B --> E[Flagship Multi-Bot Ensemble]
+    C --> F[Standalone Momentum Scalper]
+    D --> G[Standalone Equities Strategy]
+```
 
 ## Repo Role
 
@@ -66,7 +79,7 @@ That matters because the long-term design goal is not broker lock-in. It is port
 
 ## Why This Repo Exists
 
-Glitch Trading Core is meant to be used by builders.
+Glitch Trading Core is meant to be used by builders and system designers.
 
 Developers can study the architecture, reuse the strategy patterns, and build their own broker-portable systems on top of this foundation. If the project helps your work, support the ecosystem by starring the repo and contributing improvements back.
 
