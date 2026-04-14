@@ -213,6 +213,13 @@ project still keeps a clear authorship trail through:
 - [NOTICE](./NOTICE)
 - [AUTHORS.md](./AUTHORS.md)
 
+## Maintainer And Contact
+
+Glitch Executor is developed and maintained by Tejas Karan Agrawal, operating under the business name Nuraveda.
+
+- Support and responsible disclosure: `support@glitchexecutor.com`
+- Registered address: `77 Huntley St, Toronto, ON M4Y 2P3, Canada`
+
 ## Branding Note
 
 `Glitch` and `Glitch Executor` are part of the original project identity and
