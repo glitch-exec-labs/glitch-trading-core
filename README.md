@@ -188,6 +188,10 @@ Read the cTrader direction in [ctrader/README.md](./ctrader/README.md).
 4. Keep secrets, state, model artifacts, and training data outside version control.
 5. Use this repo as the source-of-truth for strategy and platform structure, not for live credentials or production state.
 
+## Contributing
+
+Public improvements are welcome, especially around documentation, architecture clarity, sanitized examples, and platform portability. Start with [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+
 ## Documentation
 
 - [Architecture](./docs/architecture.md)
