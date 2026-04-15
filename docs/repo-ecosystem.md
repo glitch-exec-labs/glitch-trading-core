@@ -38,14 +38,14 @@ Glitch's flagship ensemble strategy, combining Oracle coordination with the six-
 
 ## Strategy Lineage Guidance
 
-+Public repo positioning should tell a simple story:
-+
-+- **Indian King Cobra** and **Terciopelo** are earlier V1-era strategy lines from the broader project history
-+- **Ouroboros Snake Strategy** is the flagship and final coordinated strategy brand for the trading family
-+- **Glitch Trading Core** is the umbrella architecture layer that explains how the family evolved
-+
-+That wording helps visitors understand the older repos without competing with the flagship narrative.
-+
+Public repo positioning should tell a simple story:
+
+- **Indian King Cobra** and **Terciopelo** are earlier V1-era strategy lines from the broader project history
+- **Ouroboros Snake Strategy** is the flagship and final coordinated strategy brand for the trading family
+- **Glitch Trading Core** is the umbrella architecture layer that explains how the family evolved
+
+That wording helps visitors understand the older repos without competing with the flagship narrative.
+
 +## Satellite Strategy Repos
 
 ### Indian King Cobra
