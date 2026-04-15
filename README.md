@@ -42,15 +42,25 @@ It provides:
 The Glitch ecosystem is organized in three layers:
 
 - **Glitch Trading Core**: the umbrella engineering and architecture repository
-- [**Ouroboros Snake Strategy**](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy): the flagship multi-bot ensemble strategy
-- **Satellite strategy repos**: standalone strategy products such as Indian King Cobra and Terciopelo
+- [**Ouroboros Snake Strategy**](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy): the flagship and final coordinated strategy identity
+- **Earlier strategy lines**: public V1-era repos such as Indian King Cobra and Terciopelo that show earlier standalone product directions
+
+## Strategy Lineage
+
+The trading project should be narrated with a clear evolution arc:
+
+- **Indian King Cobra** and **Terciopelo** represent earlier V1-era strategy lines in the broader Glitch history
+- **Ouroboros Snake Strategy** is the flagship and final coordinated strategy expression for the trading family
+- **Glitch Trading Core** is the umbrella architecture repo that explains how those ideas connect at the system level
+
+That framing keeps the public story simple: the earlier repos are useful historical and product-context references, but Ouroboros is the flagship strategy brand people should anchor on first.
 
 ## Ecosystem Links
 
 - [Glitch Trading Core](https://github.com/glitch-exec-labs/glitch-trading-core) is the umbrella repo
-- [Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy) is the flagship Oracle-plus-six-snake ensemble
-- [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra) is the standalone unified momentum scalper
-- [Terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo) is the standalone equities relative-value strategy
+- [Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy) is the flagship Oracle-plus-six-snake ensemble and the final coordinated strategy identity
+- [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra) is an earlier V1-era standalone momentum strategy line
+- [Terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo) is an earlier V1-era standalone equities strategy line
 
 ### Ouroboros Snake Strategy
 
@@ -62,7 +72,7 @@ It combines:
 - the six-snake execution stack of Viper, Cobra, Taipan, Mamba, Anaconda, and Hydra
 - shared risk controls, feature engineering, and broker-adapter design
 
-Indian King Cobra and Terciopelo should be positioned as separate strategy products rather than folded permanently into the Ouroboros ensemble identity.
+Indian King Cobra and Terciopelo should be positioned as earlier strategy lines in the Glitch history rather than folded into the final Ouroboros flagship identity.
 
 ## Broker And Platform Reach
 
@@ -132,7 +142,7 @@ More detail lives in [docs/strategy-matrix.md](./docs/strategy-matrix.md).
 
 ## Satellite Strategy Repos
 
-These now live as standalone public repos rather than as part of the core codebase:
+These now live as standalone public repos rather than as part of the core codebase. Publicly, they should be framed as earlier V1-era strategy lines that led into the flagship Ouroboros identity:
 
 - [glitch-indian-king-cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra)
 - [glitch-terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo)

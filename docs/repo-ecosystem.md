@@ -30,19 +30,29 @@ Role:
 
 - flagship coordinated ensemble strategy
 - Oracle plus the six-snake stack
-- the primary Glitch multi-bot identity
+- the final and primary Glitch multi-bot identity
 
 Suggested description:
 
 Glitch's flagship ensemble strategy, combining Oracle coordination with the six-snake execution stack.
 
-## Satellite Strategy Repos
+## Strategy Lineage Guidance
+
++Public repo positioning should tell a simple story:
++
++- **Indian King Cobra** and **Terciopelo** are earlier V1-era strategy lines from the broader project history
++- **Ouroboros Snake Strategy** is the flagship and final coordinated strategy brand for the trading family
++- **Glitch Trading Core** is the umbrella architecture layer that explains how the family evolved
++
++That wording helps visitors understand the older repos without competing with the flagship narrative.
++
++## Satellite Strategy Repos
 
 ### Indian King Cobra
 
 Role:
 
-- standalone single-bot strategy product
+- earlier V1-era standalone single-bot strategy line
 - momentum scalping framework
 - internally segmented by timeframe role and per-asset profiles
 
@@ -58,7 +68,7 @@ Repo:
 
 Role:
 
-- standalone equities strategy product
+- earlier V1-era standalone equities strategy line
 - relative-value and mean-reversion focus
 - different asset universe and different audience from the snake stack
 
