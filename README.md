@@ -1,8 +1,8 @@
 <div align="center">
 
-# Glitch Trading Core
+# Glitch Trade Core
 
-Core Glitch trading bots, oracle coordination, and shared risk infrastructure for a multi-strategy trading stack.
+Core strategy architecture, Oracle coordination, and shared risk infrastructure for the **Glitch Trade** stack.
 
 ![Product](https://img.shields.io/badge/product-Umbrella%20Core-0f766e?style=for-the-badge)
 ![Family](https://img.shields.io/badge/family-glitch%20trading-111827?style=for-the-badge)
@@ -12,6 +12,8 @@ Core Glitch trading bots, oracle coordination, and shared risk infrastructure fo
 [Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy) · [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra) · [Terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo)
 
 </div>
+
+> Part of **Glitch Trade**, the trading domain inside **Glitch Executor Labs** — one builder shipping products across **Trade**, **Edge**, and **Grow**.
 
 > Glitch Trading Core is the umbrella architecture repo for the Glitch trading family: shared modules, Oracle coordination patterns, centralized risk design, and the bridge from today's MT5 estate to the next cTrader stack.
 
