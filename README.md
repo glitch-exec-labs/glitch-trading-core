@@ -9,7 +9,7 @@ Core strategy architecture, Oracle coordination, and shared risk infrastructure 
 ![Platform](https://img.shields.io/badge/platform-MT5%20today%20%7C%20cTrader%20next-111827?style=for-the-badge)
 ![Scope](https://img.shields.io/badge/scope-architecture%20%7C%20oracle%20%7C%20risk-059669?style=for-the-badge)
 
-[Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy) · [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra) · [Terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo)
+[Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-trade-ouroboros-snake-strategy) · [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-trade-indian-king-cobra) · [Terciopelo](https://github.com/glitch-exec-labs/glitch-trade-terciopelo)
 
 </div>
 
@@ -44,7 +44,7 @@ It provides:
 The Glitch ecosystem is organized in three layers:
 
 - **Glitch Trading Core**: the umbrella engineering and architecture repository
-- [**Ouroboros Snake Strategy**](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy): the flagship and final coordinated strategy identity
+- [**Ouroboros Snake Strategy**](https://github.com/glitch-exec-labs/glitch-trade-ouroboros-snake-strategy): the flagship and final coordinated strategy identity
 - **Earlier strategy lines**: public V1-era repos such as Indian King Cobra and Terciopelo that show earlier standalone product directions
 
 ## Strategy Lineage
@@ -59,10 +59,10 @@ That framing keeps the public story simple: the earlier repos are useful histori
 
 ## Ecosystem Links
 
-- [Glitch Trading Core](https://github.com/glitch-exec-labs/glitch-trading-core) is the umbrella repo
-- [Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-ouroboros-snake-strategy) is the flagship Oracle-plus-six-snake ensemble and the final coordinated strategy identity
-- [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra) is an earlier V1-era standalone momentum strategy line
-- [Terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo) is an earlier V1-era standalone equities strategy line
+- [Glitch Trading Core](https://github.com/glitch-exec-labs/glitch-trade-core) is the umbrella repo
+- [Ouroboros Snake Strategy](https://github.com/glitch-exec-labs/glitch-trade-ouroboros-snake-strategy) is the flagship Oracle-plus-six-snake ensemble and the final coordinated strategy identity
+- [Indian King Cobra](https://github.com/glitch-exec-labs/glitch-trade-indian-king-cobra) is an earlier V1-era standalone momentum strategy line
+- [Terciopelo](https://github.com/glitch-exec-labs/glitch-trade-terciopelo) is an earlier V1-era standalone equities strategy line
 
 ### Ouroboros Snake Strategy
 
@@ -146,15 +146,15 @@ More detail lives in [docs/strategy-matrix.md](./docs/strategy-matrix.md).
 
 These now live as standalone public repos rather than as part of the core codebase. Publicly, they should be framed as earlier V1-era strategy lines that led into the flagship Ouroboros identity:
 
-- [glitch-indian-king-cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra)
-- [glitch-terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo)
+- [glitch-trade-indian-king-cobra](https://github.com/glitch-exec-labs/glitch-trade-indian-king-cobra)
+- [glitch-trade-terciopelo](https://github.com/glitch-exec-labs/glitch-trade-terciopelo)
 
 Glitch Trading Core should describe and link these products, but not present them as part of the in-repo Ouroboros execution stack.
 
 ## Repository Map
 
 ```text
-glitch-trading-core/
+glitch-trade-core/
 |-- mt5/
 |   |-- bots/        Current Python bot entrypoints
 |   |-- shared/      Indicators, risk, data, orchestration

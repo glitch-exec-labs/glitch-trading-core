@@ -62,7 +62,7 @@ Indian King Cobra is a unified momentum scalping bot with timeframe-aware execut
 
 Repo:
 
-- [glitch-indian-king-cobra](https://github.com/glitch-exec-labs/glitch-indian-king-cobra)
+- [glitch-trade-indian-king-cobra](https://github.com/glitch-exec-labs/glitch-trade-indian-king-cobra)
 
 ### Terciopelo
 
@@ -78,7 +78,7 @@ Terciopelo is a Mag7-focused relative-value and mean-reversion trading system wi
 
 Repo:
 
-- [glitch-terciopelo](https://github.com/glitch-exec-labs/glitch-terciopelo)
+- [glitch-trade-terciopelo](https://github.com/glitch-exec-labs/glitch-trade-terciopelo)
 
 Implementation note:
 
