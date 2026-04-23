@@ -47,6 +47,7 @@ class BacktestEngine:
         
         current_position = 0  # 0=none, 1=long, -1=short
         entry_price = 0
+        entry_idx = -1
         
         trades = []
         
@@ -57,6 +58,7 @@ class BacktestEngine:
             if current_position == 0 and signal != 0:
                 current_position = signal
                 entry_price = closes[i]
+                entry_idx = i
                 entry_prices[i] = entry_price
                 positions[i] = current_position
             
@@ -81,7 +83,7 @@ class BacktestEngine:
                     
                     # Record trade
                     trades.append({
-                        'entry_idx': np.where(entry_prices == entry_price)[0][0],
+                        'entry_idx': entry_idx,
                         'exit_idx': i,
                         'direction': 'LONG' if current_position == 1 else 'SHORT',
                         'entry_price': entry_price,
@@ -93,6 +95,7 @@ class BacktestEngine:
                     # Reset position
                     current_position = 0
                     entry_price = 0
+                    entry_idx = -1
                 else:
                     # Hold position
                     positions[i] = current_position
@@ -222,6 +225,16 @@ class BacktestEngine:
             results.append(result)
         
         # Aggregate results
+        if not results:
+            return {
+                'period_results': [],
+                'avg_return_pct': 0.0,
+                'avg_drawdown_pct': 0.0,
+                'avg_win_rate': 0.0,
+                'is_robust': False,
+                'error': 'Insufficient data per split for walk-forward analysis'
+            }
+
         avg_return = np.mean([r['total_return_pct'] for r in results])
         avg_drawdown = np.mean([r['max_drawdown_pct'] for r in results])
         avg_winrate = np.mean([r['win_rate'] for r in results])
